@@ -1,4 +1,46 @@
-# Bread-Fit
+<div align="center">
+  <h1>🍞Bread Fit🥨</h1>
+  <p>빵과 결이 맞는 사람들을 위한 서비스</p>
+  <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fyoojin-park19%2Fbread-fit&count_bg=%23F3A30A&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/></a>
+  <img src="https://img.shields.io/github/stars/yoojin-park19/bread-fit" alt="stars"/>
+  <img src="https://img.shields.io/github/issues-pr/yoojin-park19/bread-fit" alt="open pull requests"/>
+</div>
+
+
+
+- [팀원 소개](#-팀원-소개)
+- [프로젝트 개요](#-프로젝트-개요)
+- [기술 스택](#-기술-스택)
+- [페이지](#-페이지)
+
+## 👋 팀원 소개
+
+<table>
+    <tr height="160px">
+        <td align="center" width="150px">
+            <a href="https://github.com/yoojin-park19/bread-fit"><img height="120px" width="120px" src="https://github.com/yoojin-park19.png"/></a>
+            <br />
+            <strong>박유진</strong>
+        </td>
+        <td align="center" width="150px">
+            <a href="https://github.com/Sangdon1029"><img height="120px" width="120px" src="https://github.com/Sangdon1029.png"/></a>
+            <br />
+            <strong>김상돈</strong>
+        </td>
+        <td align="center" width="150px">
+            <a href="https://github.com/OhRaeKyu"><img height="120px" width="120px" src="https://github.com/OhRaeKyu.png"/></a>
+            <br />
+            <strong>오래규</strong>
+        </td>
+        <td align="center" width="150px">
+            <a href="https://github.com/ongddree"><img height="120px" width="120px" src="https://github.com/ongddree.png"/></a>
+            <br />
+            <strong>박서영</strong>
+        </td>
+    </tr>
+</table>
+
+
 
 ### 프로젝트 기간
 2021-12-22 ~ 202112-30
