@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color-1: #f2eddc;
+  --bg-color-2: #f2c894; /*비활성화*/
+  --bg-color-3: #d98c5f; /*활성화*/
+  --bg-color-4: #734743; /*스플래시*/
+  --bg-color-5: #000000;
+  --bg-color-6: #ffffff;
+  --bg-color-7: #d0d3d9;
+  --bg-color-8: #767676; /*버튼 글씨*/
+  --bg-color-9: #F2F2F2; /*버튼 배경 임시*/
+}
+
+/* button : 세로값은 고정속성, 가로값은 가변 속성 - 멋사 공지 */
