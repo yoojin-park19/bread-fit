@@ -174,7 +174,7 @@
 /* user-search */
 
 .user-search-container {
-  width: 358px;
+  width: 345px;
   height: 50px;
   display: flex;
   align-items: center;
@@ -369,6 +369,7 @@ color: var(--bg-color-8);
 .follow-head-title {
   font-size: 14px;
   font-weight: 600;
+  color: var(--bg-color-3);
 }
 
 /* //follow */
