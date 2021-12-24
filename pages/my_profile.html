@@ -9,7 +9,111 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Bread SNS</title>
 </head>
-<body>
- 
+<body id="appMyProfile">
+    <div class="myProfilePage">
+        <h1 class="blind">본인의 프로필 확인 페이지입니다.</h1>
+        <header class="profile-head">
+            <h2 class="blind">현재 페이지에 대한 뒤로가기 버튼과 메뉴 더보기 버튼 영역입니다.</h2>
+            <button type="button"><img src="../assets/icon-arrow-left.svg" alt="뒤로가기 버튼입니다." class="back-btn"></button>
+            <button type="button"><img src="../assets/icon- more-vertical.svg" alt="메뉴 더보기 버튼입니다." class="moremenu-btn"></button>
+        </header>
+        <main class="profile-main">
+            <h2 class="blind">본인이 등록한 정보를 보여주는 영역입니다.</h2>
+            <section class="profile-info">
+                <h3 class="blind">본인의 프로필 정보를 보여주는 영역입니다.</h3>
+                <article class="info-head">
+                    <h4 class="blind">본인을 구독하는 회원, 프로필 이미지, 해당 사용자가 구독하는 회원을 보여주는 영역입니다.</h4>
+                    <div>
+                        <button type="button" class="follow-count">0000</button>
+                        <p class="follow-type">followers</p>
+                    </div>
+                    <div>
+                        <img src="../assets/profile.svg" alt="사용자의 프로필 이미지입니다." class="user-image">
+                    </div>
+                    <div>
+                        <button type="button" class="follow-count">0000</button>
+                        <p class="follow-type">followings</p>
+                    </div>
+                </article>
+                <article class="info-main">
+                    <p class="user-name">애월읍 위니브 감귤농장</p>
+                    <p class="user-id">@ weniv_Mandarin</p>
+                    <p class="user-intro">애월읍 감귤 전국 배송, 귤따기 체험, 감귤 농장</p>
+                </article>
+                <article class="info-foot">
+                    <button type="button" class="modify-profile m-button cancle">프로필 수정</button>
+                    <button type="button" class="register-product m-button cancle">상품 등록</button>
+                </article>
+            </section>
+            <section class="sale-info">
+                <h3 class="blind">본인이 현재 판매 중인 상품을 보여주는 영역입니다.</h3>
+                <h4 class="sale-title">판매 중인 상품</h4>
+                <ul class="sale-list">
+                    <li class="sale-product">
+                        <img src="../assets/mandarin.jpg" alt="판매 중인 상품에 대한 이미지입니다." class="product-image">
+                        <p class="product-name">애월읍 노지 감귤</p>
+                        <p class="product-price">000,000원</p>
+                    </li>
+                    <li class="sale-product">
+                        <img src="../assets/mandarin.jpg" alt="판매 중인 상품에 대한 이미지입니다." class="product-image">
+                        <p class="product-name">애월읍 노지 감귤</p>
+                        <p class="product-price">000,000원</p>
+                    </li>
+                    <li class="sale-product">
+                        <img src="../assets/mandarin.jpg" alt="판매 중인 상품에 대한 이미지입니다." class="product-image">
+                        <p class="product-name">애월읍 노지 감귤</p>
+                        <p class="product-price">000,000원</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="post-info">
+                <h3 class="blind">본인이 업로드한 게시물을 보여주는 영역입니다.</h3>
+                <article class="post-head">
+                    <button type="button"><img src="../assets/icon-post-list-on.svg" alt="게시물 목록을 리스트 형식으로 보여주는 버튼입니다." class="show-list"></button>
+                    <button type="button"><img src="../assets/icon-post-album-off.svg" alt="게시물 목록을 앨범 형식으로 보여주는 버튼입니다." class="show-album"></button>
+                </article>
+                <article class="post-main">
+                    <ul class="post-list">
+                        <li class="post">
+                            <div class="content-head">
+                                <img src="../assets/profile.svg" alt="게시물에 보여지는 사용자의 프로필 이미지입니다." class="user-image">
+                                <div>
+                                    <p class="user-name">애월읍 위니브 감귤농장</p>
+                                    <p class="user-id">@ weniv_Mandarin</p>
+                                </div>
+                                <button><img src="../assets/s-icon-more-vertical.svg" alt="게시물 메뉴 더보기 버튼입니다." class="moremenu-btn"></button>
+                            </div>
+                            <div class="content-main">
+                                <p class="post-content">옷을 인생을 그러므로 없으면 것은 이상은 것은 우리의 위하여, 뿐이다. 이상의 청춘의 뼈 따뜻한 그들의 그와 약동하다. 대고, 못할 넣는 풍부하게 뛰노는 인생의 힘있다.</p>
+                                <img src="../assets/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                                <div class="post-response">
+                                    <button type="button"><img src="../assets/icon-heart.svg" alt="해당 게시물에 좋아요를 추가하는 버튼입니다." class="post-heart"></button>
+                                    <p class="heart-count">000</p>
+                                    <button type="button"><img src="../assets/icon-message-circle.svg" alt="해당 게시물에 댓글를 추가하는 버튼입니다." class="post-comment"></button>
+                                    <p class="comment-count">000</p>
+                                </div>
+                                <p class="post-date">2021년 12월 31일</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                    <ul class="post-album">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                        <img src="./img/mandarin-farm.jpg" alt="게시물에 업로드된 이미지입니다." class="post-image">
+                    </ul>
+                </article>
+            </section>
+        </main>
+        <nav>
+            <h2 class="blind">하단 네비게이션</h2>
+        </nav>
+    </div>
 </body>
 </html>
