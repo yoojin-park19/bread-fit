@@ -541,6 +541,12 @@ input:blank {
     display: block;
 }
 
+.profile-main-cont .cancle {
+  border:1px solid var(--bg-color-3);
+  width: 55px;
+  height: 28px;
+}
+
 .tab-menu-item.icon-user.active {
   color: var(--bg-color-3);
 }
