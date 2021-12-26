@@ -334,7 +334,7 @@ button {
 }
 
 
-
+/* 김상돈- 폰트  */
 @font-face {
     font-family: 'ELAND_Nice_M';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Nice_M.woff') format('woff');
@@ -343,34 +343,24 @@ button {
 }
 /* 폰트 라이센스 이용약관 : https://noonnu.cc/font_page/504 "이랜드 나이스체" */
 
-/* * {
-    font-family: 'ELAND_Nice_M';
-}
-
-body {
-    width: 390px;
-    min-height: 820px;
-    margin: 0 auto;
-}
-
-header {
-    position: fixed;
-    top:0;
-    z-index: 100;
-    background-color: var(--bg-color-1);
-}
-
-main {
-    margin-top: 72px;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    background-color: var(--bg-color-1);
-} */
-
 /* Product_modification */
+.wrap-product-modi {
+  width: 390px;
+  height: 844px;
+  background-color: var(--bg-color-6);
+  padding: 54px 34px 499px;
+}
+.product-header-cont {
+  width: 340px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.product-head-btn-cont {
+  float: right;
+  height: inherit;
+  margin-top: 15px;
+}
+
 .follow-head-container {
   width: 100%;
   height: 48px;
@@ -450,6 +440,18 @@ input:blank {
 
 
 /* Profile_modification */
+.wrap-profile-modi {
+  width: 390px;
+  height: 844px;
+  background-color: var(--bg-color-6);
+  padding: 54px 34px 499px;
+}
+.profile-header-cont {
+  width: 340px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
 .prof-modi-cont {
     display: flex;
     flex-direction: column;
@@ -481,11 +483,17 @@ input:blank {
     background-image: url("../assets/img-btn.svg");
     cursor: pointer;
 }
-.ms-button {
+.profile-head-btn-cont {
+  float: right;
+  height: inherit;
+  margin-top: 15px;
+}
+
+.profile-head-btn-cont .ms-button {
     position: absolute;
     right: 16px;
 }
-.ms-button.disabled{
+.profile-head-btn-cont .ms-button.disabled{
     display: none;
 }
 
@@ -513,24 +521,58 @@ input:blank {
 /* //Profile_modification */
 
 
-/* yourprofile */
-.user-search-container {
+/* yourprofile_2 */
+.profile-main-cont .user-search-container {
     margin-bottom: 16px;
     position: relative;
 }
 
-.user-search-container .s-button {
+.profile-main-cont .user-search-container .s-button {
     position: absolute;
     right:0;
 }
-.user-search-container .s-button.click {
+.profile-main-cont .user-search-container .s-button.click {
     display: none;
 }
-.user-search-container .cancle {
+.profile-main-cont .user-search-container .cancle {
     display: none;
 }
-.user-search-container .cancle.click {
+.profile-main-cont .user-search-container .cancle.click {
     display: block;
+}
+
+.profile-main-cont .cancle {
+  border:1px solid var(--bg-color-3);
+  width: 55px;
+  height: 28px;
+}
+
+.tab-menu-item.icon-user.active {
+  color: var(--bg-color-3);
+}
+.wrap-profile-modi {
+  width: 390px;
+  height: 844px;
+  background-color: var(--bg-color-6);
+  padding: 54px 34px 499px;
+  position: relative;
+}
+.profile-header-cont {
+  width: 340px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.profile-main-cont {
+  margin-top: 24px;
+}
+.profile-foot-cont {
+  position: fixed;
+  width: 390px;
+  height: 60px;
+  bottom: 0; 
+  left: 50%;  
+  margin-left: -195px;
+  background-color: var(--bg-color-9);         
 }
 
 /* // yourprofile */
