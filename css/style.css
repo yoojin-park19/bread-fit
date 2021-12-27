@@ -789,10 +789,15 @@ input:blank {
 }
 
 /* home */
+.appMyHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2c94c;
+}
 .cont-home {
   width: 390px;
-  background-color: var(--bg-color-6);
-  border: 1px solid var(--bg-color-8);
+  background-color: #fff;
   color: var(--bg-color-8);
 }
 .cont-home .cont-home-header {
@@ -1152,6 +1157,7 @@ input:blank {
   display: flex;
   margin: 20px 16px;
   height: 772px;
+  position: relative;
 }
 .cont-upload .cont-upload-img {
   width: 42px;
@@ -1168,7 +1174,7 @@ input:blank {
   height: 50px;
   position: fixed;
   bottom: 10px;
-  left: 330px;
+  left: 700px;
 }
 
 /* upload 2 */
@@ -1225,6 +1231,7 @@ input:blank {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
+  display: none;
 }
 .post-modal-911 p {
   margin: 50px 0 0 26px;
@@ -1248,6 +1255,7 @@ input:blank {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
+  display: none;
 }
 .post-modal-delete p {
   margin: 50px 0 0 26px;

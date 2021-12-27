@@ -82,7 +82,6 @@
   gap: 14px;
   padding: 0 6px;
   height: 60px;
-  border: 1px solid black; /*삽입하고 지워주세요*/
 }
 
 .tab-menu-item {
@@ -237,7 +236,6 @@
 .cont-home {
   width: 390px;
   background-color: #fff;
-  border: 1px solid var(--bg-color-8);
   color: var(--bg-color-8);
 }
 .cont-home .cont-home-header {
@@ -417,7 +415,6 @@
 .cont-home {
   width: 390px;
   background-color: #fff;
-  border: 1px solid var(--bg-color-8);
   color: var(--bg-color-8);
 }
 .cont-home .cont-home-header {
