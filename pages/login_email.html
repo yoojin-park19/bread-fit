@@ -2,7 +2,6 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta http-equiv="refresh" content="3;URL=./login.html" /> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -11,6 +10,25 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-   
+    <div class="wrap">
+      <section class="input-sec login-email">
+        <h2 class="input-tit">로그인</h2>
+        <form action="" class="">
+          <fieldset class="module-inp error">
+            <label for="" class="inp-label">아이디</label>
+            <input type="text" id="inpId" class="inp-value" />
+          </fieldset>
+          <fieldset class="module-inp error">
+            <label for="" class="inp-label">비밀번호</label>
+            <input type="text" id="inpPw" class="inp-value" />
+            <strong class="inp-error"
+              >*이메일 또는 비밀번호가 일치하지 않습니다.</strong
+            >
+          </fieldset>
+          <button class="l-button disabled">로그인</button>
+          <a href="" class="link-join-email">이메일로 회원가입</a>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
