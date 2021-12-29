@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+/* Screen Reader Only */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+  }
+  
+  /* Reset CSS */
+  button {
+    margin: 0;
+    padding: 0;
+    background-color: inherit;
+    border: none;
+  }
+  
+  /* your_profile.html Style */
+  /* profile head */
+  #appYourProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-2);
+  }
+  
+  .your-profile-page {
+    width: 390px;
+    background-color: var(--bg-color-6);
+  }
+  
+  .profile-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    padding: 0 12px 0 16px;
+    border-bottom: 0.5px solid var(--bg-color-8);
+  }
+  
+  .profile-head .back-btn {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .profile-head .moremenu-btn {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* profile main */
+  /* profile info style */
+  .profile-main .profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 26px;
+    border-bottom: 0.5px solid var(--bg-color-8);
+  }
+  
+  .profile-info .info-head {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .info-head div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .info-head .follow-count {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .info-head .follow-type {
+    font-size: 10px;
+    color: var(--bg-color-8);
+  }
+  
+  .info-head .user-image {
+    width: 110px;
+    height: 110px;
+    border: 1px solid var(--bg-color-8);    
+    border-radius: 50%;
+  }
+  
+  .profile-info .info-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0 32px;
+  }
+  
+  .info-main .user-name {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .info-main .user-id {
+    margin-bottom: 16px;
+    font-size: 12px;
+    color: var(--bg-color-8);
+  }
+  
+  .info-main .user-intro {
+    font-size: 14px;
+    color: var(--bg-color-8);
+  }
+  
+  .profile-info .info-foot {
+    display: flex;
+    align-items: center;
+  }
+  
+  .info-foot .circle-btn {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--bg-color-8);
+    border-radius: 50%;
+    padding: 6px;
+  }
+  
+  .info-foot .follow-btn {
+    margin: 0 10px;
+  }
+  
+  .info-foot .unfollow-btn {
+    display: none;
+    margin: 0 10px;
+    border: 1px solid var(--bg-color-8);
+  }
+  
+  /* sale info style */
+  .profile-main .sale-info {
+    padding: 20px 20px 15px;
+    border-bottom: 0.5px solid var(--bg-color-8);
+  }
+  
+  .sale-info .sale-title {
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  /* #### 말줄임 처리해야함 ####*/
+  .sale-info {
+    /* display: none; */
+  }
+  
+  .sale-info .sale-list {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+  }
+  
+  .sale-info .sale-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sale-info .sale-list li + li {
+    margin-left: 10px;
+  }
+  
+  .sale-list .sale-product {
+    width: 140px;
+  }
+  
+  .sale-list .sale-product .product-image {
+    width: 140px;
+    height: 90px;
+    margin-bottom: 6px;
+    border: 0.5px solid var(--bg-color-8);
+    border-radius: 8px;
+  }
+  
+  .sale-list .sale-product .product-name {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .sale-list .sale-product .product-price {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--bg-color-3);
+  }
+  
+  /* post info style */
+  .post-info {
+    /* display: none; */
+  }
+  
+  .post-info .post-head {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 44px;
+    border-bottom: 0.5px solid var(--bg-color-8);
+  }
+  
+  .post-head .show-album {
+    margin: 0 16px;
+  }
+  
+  .post-info .post-main {
+    padding: 16px;
+  }
+  
+  /* posting type - list */
+  .post-main .post-list {
+    /* display: none; */
+  }
+  
+  .post-main .post-list li + li {
+    margin-top: 16px;
+  }
+  
+  .post-list .post {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .post .content-head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+  
+  .post .content-head .user-name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  
+  .post .content-head .user-id {
+    font-size: 12px;
+    color: var(--bg-color-8);
+  }
+  
+  .post .content-head .user-image {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+    border: 0.5px solid var(--bg-color-8);
+    border-radius: 50%;
+  }
+  
+  .post .content-head .moremenu-btn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+  }
+  
+  .post .content-main {
+    margin-left: 54px;
+  }
+  
+  .post .content-main .post-content {
+    font-size: 14px;
+  }
+  
+  .post .content-main .post-image {
+    width: 100%;
+    margin: 16px 0;
+    border: 0.5px solid var(--bg-color-8);
+    border-radius: 10px;
+  }
+  
+  .post .content-main .post-response {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .post .content-main .post-response button {
+    margin-right: 8.5px;
+  }
+  
+  .post .content-main .post-response p {
+    font-size: 12px;
+    color: var(--bg-color-8);
+  }
+  
+  .post .content-main .post-response .heart-count {
+    margin-right: 18.5px;
+  }
+
+  .post .content-main .post-date {
+    font-size: 10px;
+    color: var(--bg-color-8);
+  }
+  
+  /* posting type - album */
+  .post-main .post-album {
+    display: none;
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+  
+  .post-main .post-album img {
+    width: 100%;
+    height: 100%;
+  }
+  

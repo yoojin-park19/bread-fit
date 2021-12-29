@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* my_profile.html Style */
+#appMyProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-2);
+}
+  
+.my-profile-page {
+    width: 390px;
+    background-color: var(--bg-color-6);
+}
+  
+.profile-info .info-foot .modify-profile,
+.profile-info .info-foot .register-product {
+    border: 1px solid var(--bg-color-8);
+}
+  
+.profile-info .info-foot .modify-profile + .register-product {
+    margin-left: 10px;
+}
