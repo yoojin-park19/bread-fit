@@ -669,6 +669,7 @@ input:blank {
 /* post-header */
 .post-header {
   display: flex;
+  position: relative;
   justify-content: space-between;
   width: 390px;
   height: 48px;
