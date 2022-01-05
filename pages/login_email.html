@@ -8,27 +8,29 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style_module.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_modify.css" />
   </head>
   <body>
     <div class="wrap">
       <section class="input-sec login-email">
         <h2 class="input-tit">로그인</h2>
         <form action="" class="">
-          <fieldset class="module-inp error">
+          <fieldset class="module-inp">
             <label for="" class="inp-label">아이디</label>
-            <input type="text" id="inpId" class="inp-value" />
+            <input type="text" id="inpEmail" class="inp-value" />
           </fieldset>
-          <fieldset class="module-inp error">
+          <fieldset class="module-inp">
             <label for="" class="inp-label">비밀번호</label>
-            <input type="text" id="inpPw" class="inp-value" />
-            <strong class="inp-error"
+            <input type="password" id="inpPw" class="inp-value" />
+            <strong id="msgError" class="inp-error"
               >*이메일 또는 비밀번호가 일치하지 않습니다.</strong
             >
           </fieldset>
-          <button class="l-button disabled">로그인</button>
-          <a href="" class="link-join-email">이메일로 회원가입</a>
+          <button id="loginBtn" class="l-button disabled" type="button">로그인</button>
+          <a href="./join_membership.html" class="link-join-email">이메일로 회원가입</a>
         </form>
       </section>
     </div>
+    <script src="../script/login_email.js"></script>
   </body>
 </html>
