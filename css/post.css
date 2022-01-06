@@ -1,0 +1,78 @@
+.list-member {
+  display: none;
+  position: absolute;
+  width: 390px;
+  top: 48px;
+  left: 0;
+  background-color: var(--bg-color-6);
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.65);
+}
+
+.list-member a,
+button {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  line-height: 46px;
+  height: 46px;
+  padding-left: 26px;
+  color: var(--bg-color-5);
+}
+
+.list-member button:hover,
+a:hover {
+  background-color: var(--bg-color-2);
+}
+
+.list-member li:first-child {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.button-select.on + .list-member {
+  display: block;
+}
+
+.cont-home-comment-item-btn.on + .list-member {
+  display: block;
+}
+
+.delete-alert {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.alert-back {
+  display: none;
+  position: fixed;
+  z-index: 10;
+}
+
+.alert-back.on {
+  display: block;
+}
+
+.alert-back::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--bg-color-5);
+  opacity: 0.7;
+  z-index: 10;
+}
+/* modal */
+
+.cont-home-post-feed-like-btn.liked {
+  background: url(../assets/icon-like-fill.svg) no-repeat;
+}
+
+/* like  */
+
+/* post.js 실행  */

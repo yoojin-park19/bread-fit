@@ -96,7 +96,7 @@
   width: 84px;
 }
 
-.tab-menu-item::before {
+.tab-menu-item.icon-home::before {
   display: block;
   content: "";
   position: absolute;
@@ -106,16 +106,32 @@
   top: 10px;
 }
 
+.tab-menu-item.icon-home.liked::before {
+  background: url("../assets/icon-home-active.svg");
+}
+
 .tab-menu-item.icon-message::before {
   background: url("../assets/icon-message-circle.svg");
+}
+
+.tab-menu-item.icon-message.liked::before {
+  background: url("../assets/icon-message-circle-active.svg");
 }
 
 .tab-menu-item.icon-edit::before {
   background: url("../assets/icon-edit.svg");
 }
 
+.tab-menu-item.icon-edit.liked::before {
+  background: url("../assets/icon-edit-active.svg");
+}
+
 .tab-menu-item.icon-user::before {
   background: url("../assets/icon-user.svg");
+}
+
+.tab-menu-item.icon-user.liked::before {
+  background: url("../assets/icon-user-active.svg");
 }
 /* delete-alert */
 
@@ -128,6 +144,7 @@
   align-items: center;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
+  background-color: var(--bg-color-6);
 }
 
 .confirm-text {
@@ -142,6 +159,8 @@
 }
 
 .confirm-cont button {
+  text-align: center;
+  padding: 0;
   width: 126px;
   height: 46px;
   background-color: white;
@@ -153,14 +172,14 @@
   border-left: 1px solid #dbdbdb;
   border-bottom-left-radius: 5px;
 }
-.cancle-delete-button:focus {
+.cancle-delete-button:hover {
   color: var(--bg-color-3);
 }
 
 .confirm-delete-button {
   border-bottom-right-radius: 5px;
 }
-.confirm-delete-button:focus {
+.confirm-delete-button:hover {
   color: var(--bg-color-3);
 }
 
