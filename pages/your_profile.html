@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/style_module.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/your_profile.css" />
+    <script defer src="../script/your_profile.js"></script>
     <title>Bread SNS</title>
   </head>
   <body id="appYourProfile">
@@ -23,13 +25,32 @@
             class="back-btn"
           />
         </button>
-        <button type="button">
+        <button id="btnSetting" type="button" class="button-select">
           <img
             src="../assets/icon- more-vertical.svg"
             alt="메뉴 더보기 버튼입니다."
             class="moremenu-btn"
           />
         </button>
+        <ul id="modalSetting" class="list-member">
+          <li>
+            <button type="button">설정 및 개인정보</button>
+          </li>
+          <li><button id="btnLogout" type="button">로그아웃</button></li>
+        </ul>
+        <div id="alertPost" class="alert-back">
+          <ul class="delete-alert">
+            <li class="confirm-text">로그아웃 하시겠습니까?</li>
+            <li class="confirm-cont">
+              <button id="btnCancle" type="button" class="cancle-delete-button">
+                취소
+              </button>
+              <button type="button" class="confirm-delete-button">
+                로그아웃
+              </button>
+            </li>
+          </ul>
+        </div>
       </header>
       <main class="profile-main">
         <h2 class="blind">해당 사용자가 등록한 정보를 보여주는 영역입니다.</h2>
