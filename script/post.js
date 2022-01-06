@@ -1,3 +1,4 @@
+/* 모달 */
 const btnPost = document.getElementById("btnPost");
 const modalPost = document.getElementById("modalPost");
 const alertPost = document.getElementById("alertPost");
@@ -33,3 +34,18 @@ btnDelete.addEventListener("click", () => {
 btnCancle.addEventListener("click", () => {
   alertPost.classList.remove("on");
 });
+
+/* 좋아요 */
+
+const btnLike = document.getElementById("btnLike");
+const likeCount = document.getElementById("likeCount");
+
+let count = 0;
+
+function like() {
+  count === 1 ? (count = 0) : (count = 1);
+  likeCount.innerText = count;
+  btnLike.classList.toggle("liked");
+}
+
+btnLike.addEventListener("click", like);
