@@ -96,7 +96,7 @@
   width: 84px;
 }
 
-.tab-menu-item::before {
+.tab-menu-item.icon-home::before {
   display: block;
   content: "";
   position: absolute;
@@ -106,16 +106,32 @@
   top: 10px;
 }
 
+.tab-menu-item.icon-home.liked::before {
+  background: url("../assets/icon-home-active.svg");
+}
+
 .tab-menu-item.icon-message::before {
   background: url("../assets/icon-message-circle.svg");
+}
+
+.tab-menu-item.icon-message.liked::before {
+  background: url("../assets/icon-message-circle-active.svg");
 }
 
 .tab-menu-item.icon-edit::before {
   background: url("../assets/icon-edit.svg");
 }
 
+.tab-menu-item.icon-edit.liked::before {
+  background: url("../assets/icon-edit-active.svg");
+}
+
 .tab-menu-item.icon-user::before {
   background: url("../assets/icon-user.svg");
+}
+
+.tab-menu-item.icon-user.liked::before {
+  background: url("../assets/icon-user-active.svg");
 }
 /* delete-alert */
 
