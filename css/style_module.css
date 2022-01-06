@@ -355,6 +355,7 @@
 }
 .follow-head-button {
   background-color: transparent;
+  margin-left: 10px;
 }
 .follow-head-title {
   font-size: 14px;

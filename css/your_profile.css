@@ -301,9 +301,11 @@ button {
 }
 
 /* posting type - album */
-.post-main .post-album {
+.post-album-cont {
   display: none;
-  /* display: grid; */
+}
+.post-main .post-album {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   width: 100%;
@@ -400,3 +402,4 @@ a:hover {
 }
 
 /* like  */
+

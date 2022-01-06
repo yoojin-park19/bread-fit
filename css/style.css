@@ -36,13 +36,21 @@ button {
   margin-bottom: 30px;
 }
 .product-head-btn-cont {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 390px;
+  height: 300px;
   height: inherit;
   margin-top: 15px;
+  border: 1px solid red;
 }
 
+.prod-picb-wrap {
+  position: relative;
+}
 .follow-head-container {
-  width: 100%;
+  width: 390px;
   height: 48px;
   display: flex;
   align-items: center;
@@ -123,12 +131,10 @@ input:blank {
   width: 390px;
   height: 844px;
   background-color: var(--bg-color-6);
-  padding: 54px 34px 499px;
 }
 .profile-header-cont {
-  width: 340px;
+  width: 390px;
   position: relative;
-  margin-bottom: 30px;
 }
 
 .prof-modi-cont {
@@ -159,21 +165,20 @@ input:blank {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-image: url("../assets/img-btn.svg");
+  background-image: url("../../assets/img-btn.svg");
   cursor: pointer;
 }
 .profile-head-btn-cont {
-  float: right;
   height: inherit;
   margin-top: 15px;
 }
 
+.profile-head-btn-cont .ms-button.disabled,
 .profile-head-btn-cont .ms-button {
+  display: block;
   position: absolute;
-  right: 16px;
-}
-.profile-head-btn-cont .ms-button.disabled {
-  display: none;
+  top: 10px;
+  right: -30px;
 }
 
 .prof-info-inpt label {
@@ -196,6 +201,16 @@ input:blank {
   font-size: 12px;
   margin-top: 16px;
   margin-bottom: 10px;
+}
+
+#profile-id-alert {
+  display: none;
+  color: red;
+  font-size: 11px;
+  margin-top: -10px;
+}
+#profile-id-alert.on {
+  display: block;
 }
 /* //Profile_modification */
 
@@ -232,7 +247,6 @@ input:blank {
   width: 390px;
   height: 844px;
   background-color: var(--bg-color-6);
-  padding: 54px 34px 499px;
   position: relative;
 }
 .profile-header-cont {
