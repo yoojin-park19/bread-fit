@@ -15,10 +15,8 @@
     <div class="cont-home">
       <header class="post-header">
         <button class="post-header-btn"></button>
-        <button
-          id="btnPost"
-          class="post-header-menu-btn button-select"
-        ></button>
+        <button id="btnPost" class="post-header-menu-btn button-select">
+        </button>
         <ul id="modalPost" class="list-member">
           <li><button id="btnDelete" type="button">삭제</button></li>
           <li><a href="./upload.html">수정</a></li>
@@ -65,16 +63,16 @@
         <div class="cont-home-post-feed">
           <div class="cont-home-post-feed-like">
             <button id="btnLike" class="cont-home-post-feed-like-btn"></button>
-            <p id="likeCount">58</p>
+            <p id="likeCount">0</p>
           </div>
           <div class="cont-home-post-feed-reply">
-            <button class="cont-home-post-feed-reply-btn"></button>
+            <button class="cont-home-post-feed-reply-btn" id="btnReply"></button>
             <p>12</p>
           </div>
         </div>
         <p class="cont-home-post-date">2021년 12월 21일</p>
       </main>
-      <section class="cont-home-comment">
+      <section class="cont-home-comment" id="contComment">
         <ul class="cont-home-comment-list">
           <li class="cont-home-comment-item">
             <div class="cont-home-comment-item-user">
@@ -136,5 +134,6 @@
     <div class="post-modal-delete">
       <p>삭제</p>
     </div>
+    <script src="../script/post.js"></script>
   </body>
 </html>
