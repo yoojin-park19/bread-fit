@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -11,17 +12,20 @@
     <link rel="stylesheet" href="../css/style.css">
     
 </head>
-<body id="appMyProfile">
+<body id="appYourProfile">
     <div class="cont-home">
         <header class="upload-header">
             <button class="upload-header-btn"></button>
-            <button class="upload-header-upload-btn">업로드</button>
+            <a href="./upload_2.html" class="upload-header-upload-btn disabled" id="uploadBtn">preview</a>
         </header>
         <main class="cont-upload">
             <img src="../assets/logo.png" alt="upload" class="cont-upload-img">
-            <p class="cont-upload-txt">게시글을 입력해주세요.</p>
+            <input type="text" class="cont-upload-txt" id="uploadTxt" placeholder="게시글을 입력해주세요."></input>
         </main>
-        <button class="cont-upload-btn"></button>
+        <section class="postRes"></section>
+        <input type="file" id="uploadImg" onchange="activeBtn()" multiple></input>
+        <label for="uploadImg" class="cont-upload-btn"></label>
     </div>
+    <script src="../script/upload.js"></script>
 </body>
 </html>
