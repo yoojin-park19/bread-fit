@@ -49,3 +49,10 @@ function like() {
 }
 
 btnLike.addEventListener("click", like);
+
+
+const btnReply = document.getElementById('btnReply');
+
+btnReply.addEventListener('click', () => {
+  document.getElementById('contComment').classList.toggle('on')
+})
