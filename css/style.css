@@ -1,5 +1,5 @@
-@import "./your_profile.css";
-@import "./my_profile.css";
+@import './your_profile.css';
+@import './my_profile.css';
 
 * {
   line-height: 1.2;
@@ -86,7 +86,7 @@ button {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-image: url("../assets/img-btn.svg");
+  background-image: url('../assets/img-btn.svg');
   cursor: pointer;
 }
 
@@ -165,7 +165,7 @@ input:blank {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background-image: url("../../assets/img-btn.svg");
+  background-image: url('../../assets/img-btn.svg');
   cursor: pointer;
 }
 .profile-head-btn-cont {
@@ -291,13 +291,23 @@ input:blank {
   color: var(--bg-color-4);
   font-size: 30px;
   font-weight: 700;
-  font-family: "Sunflower", sans-serif;
+  font-family: 'Sunflower', sans-serif;
 }
 
 .landing .logo {
   display: block;
   width: 200px;
   height: 200px;
+  animation: loading 0.5s infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
 }
 
 /* login.html */
@@ -305,7 +315,7 @@ input:blank {
 .landing.login {
   background-color: var(--bg-color-4);
   padding: 204px 0 0;
-  font-family: "Nanum Gothic Coding", monospace;
+  font-family: 'Nanum Gothic Coding', monospace;
   font-size: 400;
 }
 
@@ -343,11 +353,11 @@ input:blank {
 
 .login-sns-item::before {
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   width: 24px;
   height: 24px;
-  background: url("../assets/login-kakao.svg");
+  background: url('../assets/login-kakao.svg');
   top: 10px;
   left: 14px;
 }
@@ -357,7 +367,7 @@ input:blank {
 }
 
 .login-sns-item.login-google::before {
-  background: url("../assets/login-google.svg");
+  background: url('../assets/login-google.svg');
 }
 
 .login-sns-item.login-facebook {
@@ -365,7 +375,7 @@ input:blank {
 }
 
 .login-sns-item.login-facebook::before {
-  background: url("../assets/login-facebook.svg");
+  background: url('../assets/login-facebook.svg');
 }
 
 .link-email,
@@ -377,7 +387,7 @@ input:blank {
 
 .link-email::after {
   display: inline-block;
-  content: "\007C";
+  content: '\007C';
   margin-left: 8px;
 }
 
@@ -435,7 +445,7 @@ input:blank {
   line-height: 14px;
 }
 
-.module-inp.error .inp-error {
+.module-inp .inp-error.error {
   display: block;
 }
 
@@ -511,7 +521,7 @@ input:blank {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  font-family: "GowunDodum-Regular";
+  font-family: 'GowunDodum-Regular';
 }
 .cont-home .cont-home-main {
   height: 712px;
@@ -557,21 +567,21 @@ input:blank {
 }
 .tab-menu-item::before {
   display: block;
-  content: "";
+  content: '';
   position: absolute;
   width: 24px;
   height: 24px;
-  background: url("../assets/icon-home.svg");
+  background: url('../assets/icon-home.svg');
   top: 10px;
 }
 .tab-menu-item.icon-message::before {
-  background: url("../assets/icon-message-circle.svg");
+  background: url('../assets/icon-message-circle.svg');
 }
 .tab-menu-item.icon-edit::before {
-  background: url("../assets/icon-edit.svg");
+  background: url('../assets/icon-edit.svg');
 }
 .tab-menu-item.icon-user::before {
-  background: url("../assets/icon-user.svg");
+  background: url('../assets/icon-user.svg');
 }
 
 /* home-post */
@@ -639,7 +649,7 @@ input:blank {
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-  font-family: "GowunDodum-Regular";
+  font-family: 'GowunDodum-Regular';
 }
 .cont-home-search .cont-home-search-btn {
   background-image: url(../assets/icon-arrow-left.png);
@@ -772,7 +782,7 @@ input:blank {
 .cont-home-comment-item-user {
   display: flex;
   padding: 15px 16px;
-  font-family: "GowunDodum-Regular";
+  font-family: 'GowunDodum-Regular';
 }
 .cont-home-comment-item-user .cont-home-comment-item-img {
   width: 36px;
@@ -943,7 +953,7 @@ input:blank {
 }
 .post-modal-911 p::before {
   display: block;
-  content: "";
+  content: '';
   background-image: url(../assets/Rectangle\ 70.png);
   width: 50px;
   height: 4px;
@@ -967,7 +977,7 @@ input:blank {
 }
 .post-modal-delete p::before {
   display: block;
-  content: "";
+  content: '';
   background-image: url(../assets/Rectangle\ 70.png);
   width: 50px;
   height: 4px;
