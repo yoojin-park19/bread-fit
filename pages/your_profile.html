@@ -18,13 +18,13 @@
         <h2 class="blind">
           현재 페이지에 대한 뒤로가기 버튼과 메뉴 더보기 버튼 영역입니다.
         </h2>
-        <button type="button">
+        <a href="./seach_2.html"  type="button">
           <img
             src="../assets/icon-arrow-left.svg"
             alt="뒤로가기 버튼입니다."
             class="back-btn"
           />
-        </button>
+        </a>
         <button id="btnSetting" type="button" class="button-select">
           <img
             src="../assets/icon- more-vertical.svg"
@@ -181,27 +181,53 @@
                     class="post-image"
                   />
                   <div class="post-response">
-                    <button type="button">
+                    <button type="button" id="btnLike1">
                       <img
                         src="../assets/icon-heart.svg"
                         alt="해당 게시물에 좋아요를 추가하는 버튼입니다."
                         class="post-heart"
                       />
                     </button>
-                    <p class="heart-count">000</p>
-                    <button type="button">
+                    <p class="heart-count" id="likeCount">58</p>
+                    <button type="button" id="btnReply">
                       <img
                         src="../assets/icon-message-circle.svg"
                         alt="해당 게시물에 댓글를 추가하는 버튼입니다."
-                        class="post-comment"
                       />
                     </button>
-                    <p class="comment-count">000</p>
+                    <p class="comment-count">002</p>
                   </div>
                   <p class="post-date">2021년 12월 31일</p>
                 </div>
               </li>
             </ul>
+            <section class="cont-home-comment add" id="contComment">
+              <ul class="cont-home-comment-list">
+                  <li class="cont-home-comment-item">
+                      <div class="cont-home-comment-item-user">
+                          <img src="../assets/logo.png" alt=""class="cont-home-comment-item-img">
+                          <p>영등포구 빵농장</p>
+                          <small>12일전</small>
+                          <button class="cont-home-comment-item-btn"></button>
+                      </div>
+                      <p class="cont-home-comment-item-txt">
+                          게시글 답변~~!!! 최고최고
+                      </p>
+                      <button class="cont-home-comment-item-btn"></button>
+                  </li>
+                  <li class="cont-home-comment-item">
+                      <div class="cont-home-comment-item-user">
+                          <img src="../assets/logo.png" alt=""class="cont-home-comment-item-img">
+                          <p>영등포구 빵농장</p>
+                          <small>12일전</small>
+                          <button class="cont-home-comment-item-btn"></button>
+                      </div>
+                      <p class="cont-home-comment-item-txt">
+                          안녕하세요.사진이 너무 멋져요 언제 먹을수 있나요?
+                      </p>
+                  </li>
+              </ul>
+          </section>
             <div class="post-album-cont">
             <ul class="post-album">
               <img
