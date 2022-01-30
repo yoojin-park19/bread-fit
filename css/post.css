@@ -9,21 +9,21 @@
 }
 
 .list-member a,
-button {
+.list-member button {
   display: block;
   font-size: 14px;
   text-align: left;
-  width: 100%;
+  /* width: 100%; */
   line-height: 46px;
   height: 46px;
   padding-left: 26px;
   color: var(--bg-color-5);
 }
 
-.list-member button:hover,
+/* .list-member button:hover,
 a:hover {
   background-color: var(--bg-color-2);
-}
+} */
 
 .list-member li:first-child {
   border-bottom: 1px solid #dbdbdb;
@@ -74,5 +74,7 @@ a:hover {
 }
 
 /* like  */
-
+.cont-home-comment-list {
+  
+}
 /* post.js 실행  */

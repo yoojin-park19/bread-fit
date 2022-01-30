@@ -41,7 +41,7 @@
               보여주는 영역입니다.
             </h4>
             <div>
-              <button type="button" class="follow-count">0000</button>
+              <button type="button" class="follow-count follower-show">0</button>
               <p class="follow-type">followers</p>
             </div>
             <div>
@@ -52,7 +52,7 @@
               />
             </div>
             <div>
-              <button type="button" class="follow-count">0000</button>
+              <button type="button" class="follow-count following-show">0</button>
               <p class="follow-type">followings</p>
             </div>
           </article>
@@ -64,10 +64,10 @@
             </p>
           </article>
           <article class="info-foot">
-            <button type="button" class="modify-profile m-button cancle">
+            <button type="button" class="modify-profile m-button cancle" id="href-profile">
               프로필 수정
             </button>
-            <button type="button" class="register-product m-button cancle">
+            <button type="button" class="register-product m-button cancle" id="href-upload">
               상품 등록
             </button>
           </article>
@@ -110,20 +110,8 @@
         <section class="post-info">
           <h3 class="blind">본인이 업로드한 게시물을 보여주는 영역입니다.</h3>
           <article class="post-head">
-            <button type="button">
-              <img
-                src="../assets/icon-post-list-on.svg"
-                alt="게시물 목록을 리스트 형식으로 보여주는 버튼입니다."
-                class="show-list"
-              />
-            </button>
-            <button type="button">
-              <img
-                src="../assets/icon-post-album-off.svg"
-                alt="게시물 목록을 앨범 형식으로 보여주는 버튼입니다."
-                class="show-album"
-              />
-            </button>
+            <button id="show-list" type="button"><img src="../assets/icon-post-list-on.svg" alt="게시물 목록을 리스트 형식으로 보여주는 버튼입니다." class="show-list"></button>
+            <button id="show-album" type="button"><img src="../assets/icon-post-album-off.svg" alt="게시물 목록을 앨범 형식으로 보여주는 버튼입니다." class="show-album"></button>
           </article>
           <article class="post-main">
             <ul class="post-list">
@@ -158,84 +146,111 @@
                     class="post-image"
                   />
                   <div class="post-response">
-                    <button type="button">
+                    <button type="button" id="btnLike1">
                       <img
                         src="../assets/icon-heart.svg"
                         alt="해당 게시물에 좋아요를 추가하는 버튼입니다."
                         class="post-heart"
                       />
                     </button>
-                    <p class="heart-count">000</p>
-                    <button type="button">
+                    <p class="heart-count" id="likeCount">58</p>
+                    <button type="button" id='btnReply'>
                       <img
                         src="../assets/icon-message-circle.svg"
                         alt="해당 게시물에 댓글를 추가하는 버튼입니다."
                         class="post-comment"
                       />
                     </button>
-                    <p class="comment-count">000</p>
+                    <p class="comment-count">002</p>
                   </div>
                   <p class="post-date">2021년 12월 31일</p>
                 </div>
               </li>
             </ul>
             <div class="post-album-cont">
-            <ul class="post-album">
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-              <img
-                src="../assets/sea-g726295467_1920.jpg"
-                alt="게시물에 업로드된 이미지입니다."
-                class="post-image"
-              />
-            </ul>
+              <ul class="post-album">
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+                <img
+                  src="../assets/sea-g726295467_1920.jpg"
+                  alt="게시물에 업로드된 이미지입니다."
+                  class="post-image"
+                />
+              </ul>
             </div>
           </article>
         </section>
+        <section class="cont-home-comment" id="contComment">
+          <ul class="cont-home-comment-list">
+              <li class="cont-home-comment-item">
+                  <div class="cont-home-comment-item-user">
+                      <img src="../assets/logo.png" alt=""class="cont-home-comment-item-img">
+                      <p>영등포구 빵농장</p>
+                      <small>12일전</small>
+                      <button class="cont-home-comment-item-btn"></button>
+                  </div>
+                  <p class="cont-home-comment-item-txt">
+                      게시글 답변~~!!! 최고최고
+                  </p>
+                  <button class="cont-home-comment-item-btn"></button>
+              </li>
+              <li class="cont-home-comment-item">
+                  <div class="cont-home-comment-item-user">
+                      <img src="../assets/logo.png" alt=""class="cont-home-comment-item-img">
+                      <p>영등포구 빵농장</p>
+                      <small>12일전</small>
+                      <button class="cont-home-comment-item-btn"></button>
+                  </div>
+                  <p class="cont-home-comment-item-txt">
+                      안녕하세요.사진이 너무 멋져요 언제 먹을수 있나요?
+                  </p>
+              </li>
+          </ul>
+      </section>
       </main>
       <nav>
         <h2 class="blind">하단 네비게이션</h2>
         <ul class="tab-menu">
           <li>
-            <a href="./home.html" class="tab-menu-item icon-home liked">홈</a>
+            <a href="./home.html" class="tab-menu-item icon-home">홈</a>
           </li>
           <li>
             <a href="" class="tab-menu-item icon-message">채팅</a>
@@ -246,7 +261,7 @@
             >
           </li>
           <li>
-            <a href="./my_profile.html" class="tab-menu-item icon-user"
+            <a href="./my_profile.html" class="tab-menu-item icon-user liked"
               >프로필</a
             >
           </li>

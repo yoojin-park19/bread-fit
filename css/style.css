@@ -1,5 +1,8 @@
-@import './your_profile.css';
-@import './my_profile.css';
+
+@import "./your_profile.css";
+@import "./my_profile.css";
+@import "./post.css";
+
 
 * {
   line-height: 1.2;
@@ -28,12 +31,13 @@ button {
   width: 390px;
   height: 844px;
   background-color: var(--bg-color-6);
-  padding: 54px 34px 499px;
+  padding: 0px 34px 499px;
 }
 .product-header-cont {
   width: 340px;
   position: relative;
   margin-bottom: 30px;
+  margin-left: -34px;
 }
 .product-head-btn-cont {
   position: absolute;
@@ -43,7 +47,16 @@ button {
   height: 300px;
   height: inherit;
   margin-top: 15px;
-  border: 1px solid red;
+}
+.product-head-btn-cont.add {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 390px;
+  height: 300px;
+  height: inherit;
+  margin-top: 9px;
+  margin-right: -50px;
 }
 
 .prod-picb-wrap {
@@ -96,6 +109,9 @@ button {
 }
 .ms-button.disabled {
   display: none;
+}
+.ms-button.disabled.add {
+  display: block;
 }
 
 .prod-info-inpt label {
@@ -215,6 +231,9 @@ input:blank {
 /* //Profile_modification */
 
 /* yourprofile_2 */
+.profile-main-cont {
+  margin-left: 20px;
+}
 .profile-main-cont .user-search-container {
   margin-bottom: 16px;
   position: relative;
@@ -275,7 +294,6 @@ input:blank {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background-color: #f2c94c;
 }
 
@@ -513,6 +531,7 @@ input:blank {
   width: 390px;
   background-color: #fff;
   color: var(--bg-color-8);
+  position: relative;
 }
 .cont-home .cont-home-header {
   height: 48px;
@@ -536,8 +555,8 @@ input:blank {
   height: 100px;
 }
 .cont-home-main .btn-search {
-  height: 34px;
-  padding: 0 40px;
+  height: 30px;
+  padding: 8px 40px;
   border-radius: 30px;
   background-color: var(--bg-color-3);
   color: var(--bg-color-6);
@@ -545,7 +564,7 @@ input:blank {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 18px;
 }
 .tab-menu {
   display: flex;
@@ -587,6 +606,7 @@ input:blank {
 /* home-post */
 .cont-home-post {
   margin: 24px 0;
+  height: 610px;
 }
 .cont-home-post-user {
   display: flex;
@@ -778,6 +798,16 @@ input:blank {
   height: 236px;
   border-top: 1px solid var(--bg-color-8);
   position: relative;
+  margin-left: -16px;
+  display: none;
+}
+.cont-home-comment.on {
+  display: block;
+  margin-left: 2px;
+}
+.cont-home-comment.add.on {
+  display: block;
+  margin-left: -16px;
 }
 .cont-home-comment-item-user {
   display: flex;
@@ -817,8 +847,9 @@ input:blank {
   width: 390px;
   height: 61px;
   padding: 12px 16px 12px 20px;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
+  align-items: center;
   border-top: 1px solid var(--bg-color-8);
 }
 .comment-input-cont {
@@ -836,6 +867,7 @@ input:blank {
   margin-left: 18px;
 }
 .comment-post-button {
+  text-align: right;
   color: var(--bg-color-3);
   background-color: var(--bg-color-6);
 }
@@ -855,13 +887,15 @@ input:blank {
   width: 22px;
   height: 22px;
   background-color: transparent;
-  border: none;
 }
-.upload-header .upload-header-upload-btn {
-  height: 28px;
-  padding: 0 11px;
-  border-radius: 26px;
+.upload-header .upload-header-upload-btn.disabled {
   background-color: var(--bg-color-2);
+}
+.upload-header .upload-header-upload-btn{
+  background-color: var(--bg-color-3);
+  height: 28px;
+  padding: 6px 11px 0;
+  border-radius: 26px;
   color: var(--bg-color-6);
   font-size: 12px;
   line-height: 18px;
@@ -871,8 +905,8 @@ input:blank {
 .cont-upload {
   display: flex;
   margin: 20px 16px;
-  height: 772px;
-  position: relative;
+  height: 640px;
+  align-items: flex-start;
 }
 .cont-upload .cont-upload-img {
   width: 42px;
@@ -882,20 +916,29 @@ input:blank {
   color: var(--bg-color-8);
   vertical-align: top;
   margin-top: 10px;
+  border: none;
 }
+#uploadImg {
+ width: 1px;
+ height: 1px;
+ opacity: 0;
+}
+
 .cont-upload-btn {
   background: url(../assets/upload-file.png);
   width: 50px;
   height: 50px;
-  position: fixed;
+  position: absolute;
   bottom: 10px;
-  left: 700px;
+  right: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 /* upload 2 */
 .upload-header-upload-btn-active {
   height: 28px;
-  padding: 0 11px;
+  padding: 6px 11px 0;
   border-radius: 26px;
   background-color: var(--bg-color-3);
   color: var(--bg-color-6);

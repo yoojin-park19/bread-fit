@@ -39,6 +39,13 @@ btnCancle.addEventListener("click", () => {
   alertPost.classList.remove("on");
 });
 
+const btnReply = document.getElementById('btnReply');
+const contComment = document.getElementById('contComment');
+
+btnReply.addEventListener('click', () => {
+    contComment.classList.toggle('on')
+})
+
 
 
 btn_follow.addEventListener('click', function(){
@@ -78,3 +85,24 @@ show_album.addEventListener('click', function(){
     post_album_cont.style.display = "block"
 })
 
+
+// 하트추가
+let i = 0;
+const likeCount = document.getElementById("likeCount")
+let likeCountNum = 58;
+const btnLike = document.getElementById("btnLike1");
+const likeimg = document.querySelector('.post-heart');
+btnLike.addEventListener('click',()=>{
+    if(i === 0){
+    likeimg.setAttribute("src", "../assets/icon-like-fill.svg")
+    likeCountNum += 1;
+    console.log(typeof(likeCountNum));
+    likeCount.innerText = likeCountNum;    
+    return i += 1;
+    } else if(i === 1){
+    likeCountNum -= 1;
+    likeimg.setAttribute("src", "../assets/icon-like.png")
+    likeCount.innerText = likeCountNum;
+    return i = 0;
+    }
+})

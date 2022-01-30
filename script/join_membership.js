@@ -98,6 +98,6 @@ signUpNextBtn.addEventListener("click", function() {
     if (canSignUpEmail && canSignUpPW) {
         location.href = "./join_membership_2.html";
     } else {
-        window.alert("재작성 바람");
+       alert("잘못된 정보입니다.")
     }
 });
